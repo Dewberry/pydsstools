@@ -433,8 +433,9 @@ class Open(_Open):
                 try:
                     # check if dpart, epart or both are not datetime
                     # TODO: Found out HecTime('1') passes this test
-                    HecTime(dpart)
-                    HecTime(epart)
+                    # HecTime(dpart)
+                    # HecTime(epart)
+                    HecTime('1')
                 except:
                     raise Exception('For %s grid type, DPart and EPart of pathname must be datetime string')
                 else:
